@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Estrela do Dia</title>
-
-    <!-- iOS Specific Meta Tags -->
+    
+    <!-- Add these meta tags for iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Estrela do Dia">
     
-    <!-- iOS Icon -->
-    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR4nO3dMY4bVRiAUTuKRE3BBqjoqNiGioKOho6OhmwD2Qo6alaio6ZCykqWnMUOCizx4xnP+c6R/Nd+uvLTt3d3H7p2Hn/99a+u3V9++bLr8eXLr67P+fTpi7bd3759rnr8/fLy9WDj9evvqs714cNPVY+/JT5zyvneBti2YQADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMNBN2QBefvh3yvEejz/UPP7+/bfu4/39Q+W5xvwbU3yeb96c6h5/eGg7X9exnp5+rHr8bd39+Lrt1+RbcEt85pTzvQ2wbcMABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGOim7AC7w+Xt9fn19XXouU6n/5vOdak6X9fxTqfTm6rzde3w4TCmPDq+h6fjQ/H7+lT1+FviM6ec722AbRsGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYw0H+eMVP5TeTT8gAAAABJRU5ErkJggg==">
+    <!-- Add icons for iOS -->
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR4nO3dMY4bVRiAUTuKRE3BBqjoqNiGioKOho6OhmwD2Qo6alaio6ZCykqWnMUOCizx4xnP+c6R/Nd+uvLTt3d3H7p2Hn/99a+u3V9++bLr8eXLr67P+fTpi7bd3759rnr8/fLy9WDj9evvqs714cNPVY+/JT5zyvneBti2YQADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMNBN2QBefvh3yvEejz/UPP7+/bfu4/39Q+W5xvwbU3yeb96c6h5/eGg7X9exnp5+rHr8bd39+Lrt1+RbcEt85pTzvQ2wbcMABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGOim7AC7w+Xt9fn19XXouU6n/5vOdak6X9fxTqfTm6rzde3w4TCmPDq+h6fjQ/H7+lT1+FviM6ec722AbRsGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYw0H+eMVP5TeTT8gAAAABJRU5ErkJggg==">
 
-    <!-- Web App Manifest -->
+    <!-- Add a web app manifest -->
     <link rel="manifest" href="data:application/manifest+json,{
       &quot;name&quot;: &quot;Estrela do Dia&quot;,
       &quot;short_name&quot;: &quot;Estrela&quot;,
@@ -23,7 +23,7 @@
       &quot;theme_color&quot;: &quot;#6a1b9a&quot;,
       &quot;icons&quot;: [
         {
-          &quot;src&quot;: &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR4nO3dMY4bVRiAUTuKRE3BBqjoqNiGioKOho6OhmwD2Qo6alaio6ZCykqWnMUOCizx4xnP+c6R/Nd+uvLTt3d3H7p2Hn/99a+u3V9++bLr8eXLr67P+fTpi7bd3759rnr8/fLy9WDj9evvqs714cNPVY+/JT5zyvneBti2YQADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMNBN2QBefvh3yvEejz/UPP7+/bfu4/39Q+W5xvwbU3yeb96c6h5/eGg7X9exnp5+rHr8bd39+Lrt1+RbcEt85pTzvQ2wbcMABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGOim7AC7w+Xt9fn19XXouU6n/5vOdak6X9fxTqfTm6rzde3w4TCmPDq+h6fjQ/H7+lT1+FviM6ec722AbRsGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYw0H+eMVP5TeTT8gAAAABJRU5ErkJggg==&quot;,
+          &quot;src&quot;: &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR4nO3dMY4bVRiAUTuKRE3BBqjoqNiGioKOho6OhmwD2Qo6alaio6ZCykqWnMUOCizx4xnP+c6R/Nd+uvLTt3d3H7p2Hn/99a+u3V9++bLr8eXLr67P+fTpi7bd3759rnr8/fLy9WDj9evvqs714cNPVY+/JT5zyvneBti2YQADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMNBN2QBefvh3yvEejz/UPP7+/bfu4/39Q+W5xvwbU3yeb96c6h5/eGg7X9exnp5+rHr8bd39+Lrt1+RbcEt85pTzvQ2wbcMABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGOim7AC7w+Xt9fn19XXouU6n/5vOdak6X9fxTqfTm6rzde3w4TCmPDq+h6fjQ/H7+lT1+FviM6ec722AbRsGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYw0H+eMVP5TeTT8gAAAABJRU5ErkJggg==&quot;,
           &quot;sizes&quot;: &quot;512x512&quot;,
           &quot;type&quot;: &quot;image/png&quot;
         }
@@ -31,8 +31,9 @@
     }">
 
     <style>
-        /* Original styles */
-        /* Add this to remove Safari UI components in standalone mode */
+        /* ... (keep the existing styles) ... */
+
+        /* Add this to remove the Safari UI components when in standalone mode */
         html {
             -webkit-text-size-adjust: 100%;
             -webkit-tap-highlight-color: transparent;
@@ -40,15 +41,17 @@
     </style>
 </head>
 <body>
-    <!-- Original body content -->
+    <!-- ... (keep the existing body content) ... -->
 
     <script>
-        // Original JavaScript
+        // ... (keep the existing JavaScript) ...
 
-        // Handle iOS PWA functionality
+        // Add this function to handle iOS PWA functionality
         function handleIOSPWA() {
-            if ("standalone" in window.navigator && window.navigator.standalone) {
+            if (("standalone" in window.navigator) && window.navigator.standalone) {
+                // If the app is running in standalone mode (added to home screen)
                 document.addEventListener('click', function(e) {
+                    // Handle internal navigation
                     if (e.target.tagName === 'A' && e.target.getAttribute('href')) {
                         e.preventDefault();
                         window.location = e.target.getAttribute('href');
@@ -56,9 +59,11 @@
                 }, false);
             }
         }
-        
-        // Trigger the PWA handling
+
+        // Call the function when the page loads
         window.addEventListener('load', handleIOSPWA);
+
+        // ... (keep the rest of the existing JavaScript) ...
     </script>
 </body>
 </html>
