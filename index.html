@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Estrela do Dia</title>
     
-    <!-- Add these meta tags for iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Estrela do Dia">
     
-    <!-- Add icons for iOS -->
-    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR4nO3dMY4bVRiAUTuKRE3BBqjoqNiGioKOho6OhmwD2Qo6alaio6ZCykqWnMUOCizx4xnP+c6R/Nd+uvLTt3d3H7p2Hn/99a+u3V9++bLr8eXLr67P+fTpi7bd3759rnr8/fLy9WDj9evvqs714cNPVY+/JT5zyvneBti2YQADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMNBN2QBefvh3yvEejz/UPP7+/bfu4/39Q+W5xvwbU3yeb96c6h5/eGg7X9exnp5+rHr8bd39+Lrt1+RbcEt85pTzvQ2wbcMABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGOim7AC7w+Xt9fn19XXouU6n/5vOdak6X9fxTqfTm6rzde3w4TCmPDq+h6fjQ/H7+lT1+FviM6ec722AbRsGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYw0H+eMVP5TeTT8gAAAABJRU5ErkJggg==">
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR4nO3dMY4bVRiAUTuKRE3BBqjoqNiGioKOho6OhmwD2Qo6alaio6ZCykqWnMUOCizx4xnP+c6R/Nd+uvLTt3d3H7p2Hn/99a+u3V9++bLr8eXLr67P+fTpi7bd3759rnr8/fLy9WDj9evvqs714cNPVY+/JT5zyvneBti2YQADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMNBN2QBefvh3yvEejz/UPP7+/bfu4/39Q+W5xvwbU3yeb96c6h5/eGg7X9exnp5+rHr8bd39+Lrt1+RbcEt85pTzvQ2wbcMABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGOim7AC7w+Xt9fn19XXouU6n/5vOdak6X9fxTqfTm6rzde3w4TCmPDq+h6fjQ/H7+lT1+FviM6ec722AbRsGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYw0H+eMVP5TeTT8gAAAABJRU5ErkJggg==">
 
-    <!-- Add a web app manifest -->
     <link rel="manifest" href="data:application/manifest+json,{
       &quot;name&quot;: &quot;Estrela do Dia&quot;,
       &quot;short_name&quot;: &quot;Estrela&quot;,
@@ -23,7 +20,7 @@
       &quot;theme_color&quot;: &quot;#6a1b9a&quot;,
       &quot;icons&quot;: [
         {
-          &quot;src&quot;: &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR4nO3dMY4bVRiAUTuKRE3BBqjoqNiGioKOho6OhmwD2Qo6alaio6ZCykqWnMUOCizx4xnP+c6R/Nd+uvLTt3d3H7p2Hn/99a+u3V9++bLr8eXLr67P+fTpi7bd3759rnr8/fLy9WDj9evvqs714cNPVY+/JT5zyvneBti2YQADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMNBN2QBefvh3yvEejz/UPP7+/bfu4/39Q+W5xvwbU3yeb96c6h5/eGg7X9exnp5+rHr8bd39+Lrt1+RbcEt85pTzvQ2wbcMABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGOim7AC7w+Xt9fn19XXouU6n/5vOdak6X9fxTqfTm6rzde3w4TCmPDq+h6fjQ/H7+lT1+FviM6ec722AbRsGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYw0H+eMVP5TeTT8gAAAABJRU5ErkJggg==&quot;,
+          &quot;src&quot;: &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR4nO3dMY4bVRiAUTuKRE3BBqjoqNiGioKOho6OhmwD2Qo6alaio6ZCykqWnMUOCizx4xnP+c6R/Nd+uvLTt3d3H7p2Hn/99a+u3V9++bLr8eXLr67P+fTpi7bd3759rnr8/fLy9WDj9evvqs714cNPVY+/JT5zyvneBti2YQADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMNBN2QBefvh3yvEejz/UPP7+/bfu4/39Q+W5xvwbU3yeb96c6h5/eGg7X9exnp5+rHr8bd39+Lrt1+RbcEt85pTzvQ2wbcMABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoABjKAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGMgABjKAgQxgIAMYyAAGMoCBDGAgAxjIAAYygIEMYCADGOim7AC7w+Xt9fn19XXouU6n/5vOdak6X9fxTqfTm6rzde3w4TCmPDq+h6fjQ/H7+lT1+FviM6ec722AbRsGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYwkAEMZAADGcBABjCQAQxkAAMZwEAGMJABDGQAAxnAQAYw0H+eMVP5TeTT8gAAAABJRU5ErkJggg==&quot;,
           &quot;sizes&quot;: &quot;512x512&quot;,
           &quot;type&quot;: &quot;image/png&quot;
         }
@@ -31,39 +28,329 @@
     }">
 
     <style>
-        /* ... (keep the existing styles) ... */
-
-        /* Add this to remove the Safari UI components when in standalone mode */
-        html {
-            -webkit-text-size-adjust: 100%;
-            -webkit-tap-highlight-color: transparent;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #6a1b9a;
+        }
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .activity {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .activity:active {
+            transform: scale(0.98);
+        }
+        .activity.completed {
+            background-color: #4caf50;
+            color: white;
+        }
+        .progress-container {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            height: 20px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #4caf50;
+            transition: width 0.3s ease-in-out;
+        }
+        .message {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #9c27b0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #7b1fa2;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .modal.show {
+            opacity: 1;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: scale(0.7);
+            transition: transform 0.3s ease;
+        }
+        .modal.show .modal-content {
+            transform: scale(1);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+        }
+        .settings-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .settings-form label {
+            margin-top: 10px;
+        }
+        .settings-form input,
+        .settings-form select {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .save-btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .save-btn:hover {
+            background-color: #45a049;
+        }
+        #import-input {
+            display: none;
+        }
+        .child-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #9c27b0;
+        }
+        .activity-edit-form {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .activity-edit-form input {
+            margin-right: 10px;
+        }
+        .parent-module {
+            margin-top: 30px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .tab-buttons {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .tab-button {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            flex: 1;
+            transition: background-color 0.3s;
+        }
+        .tab-button.active {
+            background-color: #9c27b0;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .report-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .report-table th, .report-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .report-table th {
+            background-color: #f2f2f2;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        .dark-mode .activity {
+            background-color: #555;
+            color: #fff;
+        }
+        .dark-mode .activity.completed {
+            background-color: #4caf50;
+            color: #fff;
+        }
+        .dark-mode .modal-content {
+            background-color: #444;
+            color: #fff;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #bb86fc;
+        }
+        .dark-mode .btn {
+            background-color: #bb86fc;
+            color: #000;
+        }
+        .dark-mode .btn:hover {
+            background-color: #a370f7;
+        }
+        .dark-mode .tab-button {
+            background-color: #555;
+            color: #fff;
+        }
+        .dark-mode .tab-button.active {
+            background-color: #bb86fc;
+            color: #000;
+        }
+        .dark-mode .report-table th {
+            background-color: #555;
+            color: #fff;
+        }
+        .dark-mode .report-table td, .dark-mode .report-table th {
+            border-color: #777;
+        }
+        @media (max-width: 600px) {
+            .activities {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+            .modal-content {
+                width: 95%;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- ... (keep the existing body content) ... -->
+    <div class="container">
+        <h1>Estrela do Dia ⭐</h1>
+        <img id="childPicture" class="child-picture" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==" alt="Foto da Criança">
+        <div id="activities" class="activities"></div>
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div id="message" class="message"></div>
+        <button id="settings-btn" class="btn">Configurações</button>
+        <button id="export-btn" class="btn">Exportar Dados</button>
+        <button id="import-btn" class="btn">Importar Dados</button>
+        <input type="file" id="import-input" accept=".json">
+        <button id="dark-mode-toggle" class="btn">🌙</button>
+
+        <div class="parent-module">
+            <h2>Módulo dos Pais</h2>
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="weekly">Relatório Semanal</button>
+                <button class="tab-button" data-tab="monthly">Relatório Mensal</button>
+            </div>
+            <div id="weekly-report" class="tab-content active">
+                <table id="weekly-report-table" class="report-table"></table>
+            </div>
+            <div id="monthly-report" class="tab-content">
+                <table id="monthly-report-table" class="report-table"></table>
+            </div>
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Configurações</h2>
+            <form id="settings-form" class="settings-form">
+                <label for="child-name">Nome da Criança:</label>
+                <input type="text" id="child-name" name="child-name" required>
+                
+                <label for="child-picture">Foto da Criança:</label>
+                <input type="file" id="child-picture" name="child-picture" accept="image/*">
+                
+                <label for="theme">Tema:</label>
+                <select id="theme" name="theme">
+                    <option value="default">Padrão</option>
+                    <option value="ocean">Oceano</option>
+                    <option value="sunset">Pôr do Sol</option>
+                    <option value="forest">Floresta</option>
+                </select>
+
+                <h3>Gerenciar Atividades</h3>
+                <div id="activity-list"></div>
+                
+                <div class="activity-edit-form">
+                    <label for="new-activity-name">Nova Atividade:</label>
+                    <input type="text" id="new-activity-name" name="new-activity-name" placeholder="Nome da Atividade">
+                    <label for="new-activity-icon">Ícone:</label>
+                    <input type="text" id="new-activity-icon" name="new-activity-icon" placeholder="Ícone (emoji)">
+                    <button type="button" id="add-activity-btn" class="btn">Adicionar</button>
+                </div>
+
+                <button type="button" id="reset-activities-btn" class="btn">Resetar para Atividades Padrão</button>
+
+                <button type="submit" class="save-btn">Salvar</button>
+            </form>
+        </div>
+    </div>
 
     <script>
-        // ... (keep the existing JavaScript) ...
-
-        // Add this function to handle iOS PWA functionality
-        function handleIOSPWA() {
-            if (("standalone" in window.navigator) && window.navigator.standalone) {
-                // If the app is running in standalone mode (added to home screen)
-                document.addEventListener('click', function(e) {
-                    // Handle internal navigation
-                    if (e.target.tagName === 'A' && e.target.getAttribute('href')) {
-                        e.preventDefault();
-                        window.location = e.target.getAttribute('href');
-                    }
-                }, false);
-            }
-        }
-
-        // Call the function when the page loads
-        window.addEventListener('load', handleIOSPWA);
-
-        // ... (keep the rest of the existing JavaScript) ...
+        // JavaScript will be continued in the next part
     </script>
 </body>
 </html>
